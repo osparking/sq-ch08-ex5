@@ -17,5 +17,10 @@
 			<td th:text="${product.price}" />
 		</tr>
 	</table>
+	<form action="/products" method="get" >
+		상품명: <input type = "text" name="name"><br>
+		가격: <input type = "text" name="price"><br>
+		<button type="submit">상품 추가</button>	
+	</form>
 </body>
 </html>
