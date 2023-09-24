@@ -10,13 +10,6 @@ import ssh_08_ex4.model.Product;
 @Service
 public class ProductService {
 	private List<Product> productList = new ArrayList<>();
-	{
-		var product = new Product();
-		product.setName("구운도너츠");
-		product.setPrice(500.0);
-				
-		productList.add(product);
-	}
 	
 	public void addProduct(Product product) {
 		productList.add(product);
